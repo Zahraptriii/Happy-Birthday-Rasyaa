@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday, Rasya</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Quicksand:wght@400;600&family=Dancing+Script:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Background Music -->
+  <audio id="bg-music" loop>
+    <source src="penjaga-hati.mp3" type="audio/mp3">
+  </audio>
+
+  <!-- Glow Animation -->
+  <div class="glow-container"></div>
+
+  <!-- Judul & Tombol -->
+  <div class="landing">
+    <h1>Happy Birthday, Rasya ✨</h1>
+    <p>Ada pesan kecil dari aku buat Rasyaa...</p>
+    
+    <!-- Tombol Baca Pesan -->
+    <button class="read-btn" onclick="showMessage()">Baca Pesan Dari Aku</button>
+    
+    <!-- Tombol Musik -->
+    <div class="music-section">
+      <button id="music-btn" onclick="toggleMusic()">Dengarkan Musik 🎵</button>
+    </div>
+  </div>
+
+  <!-- Kertas Pesan -->
+  <div id="paper" class="paper">
+    <p id="typed-text"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
